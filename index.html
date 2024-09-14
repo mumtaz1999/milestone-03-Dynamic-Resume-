@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Dynamic Resume Builder</h1>
+
+    <!-- Form for resume input -->
+    <form id="resumeForm">
+      <h2>Personal Information</h2>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <h2>Education</h2>
+      <div class="form-group">
+        <label for="school">School</label>
+        <input type="text" id="school" name="school" required />
+      </div>
+      <div class="form-group">
+        <label for="degree">Degree</label>
+        <input type="text" id="degree" name="degree" required />
+      </div>
+      <div class="form-group">
+        <label for="gradYear">Graduation Year</label>
+        <input type="number" id="gradYear" name="gradYear" required />
+      </div>
+
+      <h2>Work Experience</h2>
+      <div class="form-group">
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company" required />
+      </div>
+      <div class="form-group">
+        <label for="role">Role</label>
+        <input type="text" id="role" name="role" required />
+      </div>
+      <div class="form-group">
+        <label for="workYears">Years Worked</label>
+        <input type="number" id="workYears" name="workYears" required />
+      </div>
+
+      <h2>Skills</h2>
+      <div class="form-group">
+        <label for="skills">Skills (comma separated)</label>
+        <input type="text" id="skills" name="skills" required />
+      </div>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <!-- Section to display the generated resume -->
+    <div id="resumeDisplay"></div>
+  </div>
+
+  <script src="scripts.js" type="module"></script>
+</body>
+</html>
